@@ -1,0 +1,70 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Hind+Vadodara:wght@500&display=swap');
+
+/* Custom properties */
+:root {
+  --primary-color: #0174BE;
+  --secondary-color: #0C356A;
+  --accent1-color: #FFC436;
+  --accent2-color: #FFF0CE;
+  --heading-font: 'Architects Daughter', cursive;
+  --paragraph-font: 'Hind Vadodara', sans-serif;
+  --headline-color-on-white: var(--primary-color);
+  --headline-color-on-color: white;
+  --paragraph-color-on-white: var(--primary-color);
+  --paragraph-color-on-color: white;
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--primary-color);
+  --nav-background-color: var(--accent1-color);
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: var(--primary-color);
+}
+
+/* Global styles */
+body {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent1-color);
+    color: var(--nav-hover-link-color);
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Hero section styles */
+.hero {
+    background-color: var(--paragraph-background-color);
+    color: var(--headline-color-on-color);
+    text-align: center;
+    padding: 50px;
+}
+
+.hero h1 {
+    color: var(--headline-color-on-color);
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--nav-background-color);
+    color: var(--nav-hover-link-color);
+    text-align: center;
+    padding: 20px;
+}
