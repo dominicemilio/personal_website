@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="home.css" />
+    <!-- Link your external CSS file here -->
+    <style>
+      /* Add this style within a <style> tag or your CSS file */
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      header,
+      footer {
+        width: 1600px;
+        margin: 0 auto;
+        /* Your header and footer styles go here */
+        /* For example:
+      background-color: #f2f2f2;
+      padding: 20px;
+      */
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .form-container {
+        text-align: center;
+        width: 100%; /* Take full width of the container */
+        max-width: 1200px; /* Set three times the original width */
+        margin: 0 auto; /* Center horizontally */
+      }
+
+      .contact-form {
+        font-size: 18px; /* Adjust the font size as needed */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Your header content goes here -->
+      <nav class="navigation-panel">
+        <div class="logo">
+          <img src="logo.png" alt="English Pronto Logo" height="80px" />
+        </div>
+        <div class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="business.html">Business/Legal English</a>
+          <a href="#">English Certification</a>
+          <a href="contact_us.html">Contact Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="form-container">
+        <h1>Contact Us</h1>
+        <form
+          action="#"
+          method="post"
+          class="contact-form"
+          onsubmit="submittedMessage()"
+        >
+          <!-- Your form content goes here -->
+          <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+        <p class="submitted-message" style="display: none">
+          Form submitted! We'll get in touch soon.
+        </p>
+
+        <script>
+          function submittedMessage() {
+            event.preventDefault();
+            document.querySelector(".submitted-message").style.display =
+              "block";
+          }
+        </script>
+      </div>
+    </main>
+
+    <footer>
+      <!-- Your footer content goes here -->
+      <div class="footer-content">
+        <div class="footer-left">
+          <p>English Pronto &copy; 2023</p>
+        </div>
+        <div class="footer-center">
+          <a href="site-plan.html">Site Plan</a>
+        </div>
+        <div class="footer-right">
+          <a href="https://facebook.com" target="_blank"
+            ><img src="facebook.png" alt="Facebook"
+          /></a>
+          <a href="https://twitter.com" target="_blank"
+            ><img src="twitter.png" alt="Twitter"
+          /></a>
+          <a href="https://instagram.com" target="_blank"
+            ><img src="instagram.png" alt="Instagram"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
