@@ -7,7 +7,14 @@ body {
   background-color: #FFF0CE;
 }
 
-header,
+header {
+  background-color: #0174BE;
+  color: #FFF0CE;
+  max-width: 1600px;
+  margin: 0 auto;
+  
+}
+
 footer {
   background-color: #0174BE;
   color: #FFF0CE;
@@ -15,19 +22,19 @@ footer {
   margin: 0 auto;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #0174BE;
-  color: #FFF0CE;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 .logo img {
   height: 80px;
+  margin-top: 5px;
+  margin-left: 5px;
+  border-radius: 50px;
+  border: 2px solid #0C356A;
+}
+
+.navigation-panel {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1600px;
 }
 
 .nav-links {
@@ -88,6 +95,14 @@ header {
   margin-left: 10px;
 }
 
+.footer-left {
+  margin-left: 20px;
+}
+
+.footer-right {
+  margin-right: 20px;
+}
+
 .main-content {
   text-align: center;
   padding: 50px 0;
@@ -121,7 +136,6 @@ input[type="text"],
 input[type="email"],
 input[type="submit"] {
   width: 100%;
-  padding: 10px;
   margin-top: 5px;
   border-radius: 3px;
   border: 1px solid #ccc;
@@ -200,5 +214,4 @@ input[type="submit"]:hover {
     float: none;
   }
 }
-
 
