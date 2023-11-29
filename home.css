@@ -56,6 +56,11 @@ footer {
   color: #FF0000;
 }
 
+
+.highlighted-text{
+  display: block;
+}
+
 .hero-image,
 .image-section {
   position: relative;
@@ -87,6 +92,10 @@ footer {
 
 .fluent_english {
   box-shadow: 5px 5px 10px #6f7364;  
+}
+
+.site-plan:visited{
+  color:white;
 }
 
 .footer-content {
@@ -144,12 +153,16 @@ input[type="submit"] {
   margin-top: 5px;
   border-radius: 3px;
   border: 1px solid #ccc;
+  padding-top:6px;
+  padding-bottom:6px;
 }
 
 input[type="submit"] {
   background-color: #0174BE;
   color: #fff;
   cursor: pointer;
+  padding-top:4px;
+  padding-bottom:4px;
 }
 
 input[type="submit"]:hover {
@@ -204,6 +217,7 @@ input[type="submit"]:hover {
   width: 50%;
   float: left;
   padding: 20px;
+  padding-top: 0;
   box-sizing: border-box;
 }
 
@@ -211,6 +225,8 @@ input[type="submit"]:hover {
   background-color: #FFC436;
   color: #0C356A;
   padding: 20px;
+  padding-top:0;
+  font-size: 17px;
 }
 
 @media screen and (max-width: 600px) {
@@ -266,6 +282,7 @@ footer {
   width: 50%;
   float: left;
   padding: 20px;
+  padding-top:0;
   box-sizing: border-box;
 }
 
