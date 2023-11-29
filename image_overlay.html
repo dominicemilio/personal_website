@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Hind+Vadodara:wght@500&display=swap"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <title>English Pronto</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        background-color: #0174be;
+        color: #fff0ce;
+        padding: 20px 0;
+      }
+
+      .navigation-panel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        margin-right: 20px;
+        color: #333;
+      }
+
+      .nav-links a:hover {
+        color: #04aa6d;
+      }
+
+      .container {
+        position: relative;
+        width: 50%;
+        margin: 0 auto; /* Centering the container horizontally */
+        text-align: center; /* Centering the image */
+      }
+
+      .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: 0.5s ease;
+        backface-visibility: hidden;
+      }
+
+      .middle {
+        transition: 0.5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .container:hover .image {
+        opacity: 0.3;
+      }
+
+      .container:hover .middle {
+        opacity: 1;
+      }
+
+      .text {
+        background-color: #04aa6d;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+
+      footer {
+        background-color: #0174be;
+        color: #fff0ce;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+
+      .footer-left p {
+        margin: 0;
+      }
+
+      .footer-center a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .footer-center a:hover {
+        color: #04aa6d;
+      }
+
+      .footer-right img {
+        width: 30px;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation-panel">
+        <div class="logo">
+          <img src="logo.png" alt="English Pronto Logo" height="80px" />
+        </div>
+        <div class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="business.html">Business/Legal English</a>
+          <a href="certification.html">English Certification</a>
+          <a href="contact_us.html">Contact Us</a>
+          <a href="image_overlay.html">School Director</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <img
+        src="DominicReal.jpg"
+        alt="Avatar"
+        class="image"
+        style="width: 100%"
+      />
+      <div class="middle">
+        <div class="text">Dominic Emilio Clemence</div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <p>English Pronto &copy; 2023</p>
+        </div>
+        <div class="footer-center">
+          <a href="site-plan.html">Site Plan</a>
+        </div>
+        <div class="footer-right">
+          <a href="https://facebook.com" target="_blank"
+            ><img src="facebook.png" alt="Facebook"
+          /></a>
+          <a href="https://twitter.com" target="_blank"
+            ><img src="twitter.png" alt="Twitter"
+          /></a>
+          <a href="https://instagram.com" target="_blank"
+            ><img src="instagram.png" alt="Instagram"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
