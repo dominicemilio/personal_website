@@ -7,20 +7,12 @@ body {
   background-color: #FFF0CE;
 }
 
-header {
-  background-color: #0174BE;
-  color: #FFF0CE;
-  max-width: 1600px;
-  margin: 0 auto;
-  
-}
-
+header,
 footer {
   background-color: #0174BE;
   color: #FFF0CE;
   max-width: 1600px;
   margin: 0 auto;
-  margin-top: 5px;
 }
 
 .logo img {
@@ -42,23 +34,18 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  flex-grow: 1; /* Allows the links to expand and push to the right */
+  flex-grow: 1;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #FFF0CE;
   margin: 0 20px;
-  transition: color 0.3s ease; /* Smooth color transition */
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
   color: #FF0000;
-}
-
-
-.highlighted-text{
-  display: block;
 }
 
 .hero-image,
@@ -67,35 +54,32 @@ footer {
   text-align: center;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 20px; /* Adjust padding as needed */
+  padding: 0 20px;
 }
 
 .hero-top-text,
 .hero-bottom-text {
   position: absolute;
   width: 100%;
+  font-family: 'Architects Daughter', cursive;
 }
 
 .hero-top-text {
-  font-family: 'Architects Daughter', cursive;
   font-size: 3em;
   color: #0C356A;
   top: 40px;
 }
 
 .hero-bottom-text {
-  font-family: 'Architects Daughter', cursive;
   font-size: 4rem;
   color: #FFF0CE;
   bottom: 40px;
 }
 
-.fluent_english {
-  box-shadow: 5px 5px 10px #6f7364;  
-}
-
-.site-plan:visited{
-  color:white;
+.fluent_english,
+.site-plan:visited {
+  box-shadow: 5px 5px 10px #6f7364;
+  color: white;
 }
 
 .footer-content {
@@ -153,16 +137,16 @@ input[type="submit"] {
   margin-top: 5px;
   border-radius: 3px;
   border: 1px solid #ccc;
-  padding-top:6px;
-  padding-bottom:6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 input[type="submit"] {
   background-color: #0174BE;
   color: #fff;
   cursor: pointer;
-  padding-top:4px;
-  padding-bottom:4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 input[type="submit"]:hover {
@@ -189,7 +173,7 @@ input[type="submit"]:hover {
   justify-content: space-between;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 20px; /* Adjust padding as needed */
+  padding: 0 20px;
 }
 
 .image-container img {
@@ -225,7 +209,7 @@ input[type="submit"]:hover {
   background-color: #FFC436;
   color: #0C356A;
   padding: 20px;
-  padding-top:0;
+  padding-top: 0;
   font-size: 17px;
 }
 
@@ -240,50 +224,10 @@ input[type="submit"]:hover {
 
 .image-section {
   padding: 2rem;
-  background-color: #0174BE;
-  max-width: 1536px;
-}
-
-/* Your CSS styles here */
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Hind Vadodara', sans-serif;
-  background-color: #FFF0CE;
-}
-
-header {
-  /* Your header styles here */
-  /* ... */
-}
-
-footer {
-  /* Your footer styles here */
-  /* ... */
-}
-
-/* Other styles... */
-
-.image-section {
-  padding: 2rem;
   background-color: #FFC436;
   color: #0C356A;
   max-width: 1536px;
   overflow: hidden;
-}
-
-.left-image {
-  float: left;
-  width: 50%;
-}
-
-.text-between-images {
-  width: 50%;
-  float: left;
-  padding: 20px;
-  padding-top:0;
-  box-sizing: border-box;
 }
 
 .text-between-images h2 {
@@ -294,5 +238,3 @@ footer {
   background-color: transparent;
   color: inherit;
 }
-
-
